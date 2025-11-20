@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  margin:0;
+}
+
+.Header{
+  font-family:  Arial;
+  color:white;
+  background-color: rgb(255, 102, 102);
+  font-size: 20px;
+  padding-top:5px;
+  padding-bottom: 5px;
+}
+
+.Navbar{
+  background-color: rgb(249, 152, 152);
+}
+.HomeBtn{
+  text-decoration: none;
+  color:white;
+}
+.ContactBtn{
+  text-decoration: none;
+}
+.AboutBtn{
+  text-decoration: none;
+}

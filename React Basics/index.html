@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header{
+            color: red;
+            font-size: 16px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class = "root">Not Rendering</div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script type="text/babel">
+        const rootElement = document.querySelector(".root")
+        
+        const Navbar = (
+            <div className = "header">
+                <h1>React Basics</h1>
+                <h2>Level 2</h2>
+            </div>
+        );
+        
+        const Main = (
+            <div>
+                <h1>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et justo porttitor, scelerisque lorem sed, tristique urna.
+                    Vivamus vulputate ipsum nunc, non facilisis felis convallis luctus. Maecenas vel pharetra augue. In auctor tellus risus,
+                    quis gravida risus blandit sit amet. Morbi diam turpis, iaculis sit amet libero a, finibus auctor massa. Fusce tortor dolor
+                </h1>
+            </div>
+        );
+
+        const Footer = (
+            <div>
+                <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et justo porttitor, scelerisque lorem sed, tristique urna.
+                    Vivamus vulputate ipsum nunc, non facilisis felis convallis luctus. Maecenas vel pharetra augue. In auctor tellus risus.
+                </h2>;
+            </div>
+        );
+        
+        const App = (
+            <div>
+                {Navbar}
+                {Main}
+                {Footer}
+            </div>
+        );
+
+    ReactDOM.render(App, rootElement);
+    </script>
+
+
+</body>
+</html>
